@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>1학기 텀 프로젝트 2</title>
+     <style>
+          html,
+          body {
+               padding: 0;
+               margin: 0;
+               background-color: rgb(35, 53, 88);
+               color:rgb(233, 231, 231);
+          }
+
+          header {
+               height: 150px;
+               border-style: solid;
+               border-color: #000;
+               width: 100%;
+               margin-left: 0 auto;
+               text-align: center;
+               
+          }
+
+          .title {
+               border-bottom: 1px solid rgb(0, 0, 0);
+               height: 80px;
+               font-size: 30px;
+               line-height: 80px;
+               
+          }
+
+          nav {
+               width: 100%;
+               height: 70px;
+               margin-top: 0px;
+               margin-bottom: 10px;
+               padding: auto;
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+               
+          }
+
+          nav>a {
+               border: 3px solid;
+               border-color: #000;
+               color:rgb(233, 231, 231);
+               border-radius: 30px;
+               line-height: 30px;
+               height: 30px;
+               width: 100px;
+               padding: 5px;
+               text-decoration: none;
+               
+               transition: background-color 500ms;
+          }
+
+          nav>a:hover {
+               background-color: rgb(51, 101, 135);
+          }
+
+          nav>a:active {
+               background-color: rgb(59, 117, 155);
+
+               border-bottom: 3px solid;
+               border-color: #000;
+               
+          }
+
+          nav>a:visited, nav>a:link {
+               border: 3px solid;
+               border-color: #000;
+               color: white;
+          }
+
+          #menu{
+               height: auto;
+          }
+          
+
+          #container {
+               position: relative;
+               margin: 10px 10px;
+               text-align: center;
+               min-height: calc(100vh - 50px);
+          }
+
+          .flexBox {
+               margin-top: 30px;
+               align-items: center;
+               display: flex;
+          }
+
+          .leftSide {
+               width: 50%;
+               text-align: center;
+          }
+
+          .leftSide>img {
+               border-right: 7px solid #000;
+               border-bottom: 5px solid #000;
+               border-radius: 30px;
+               width: 80%;
+          }
+
+          .rightSide {
+               width: 50%;
+          }
+          a { 
+               border-style: solid;
+               border-radius: 15px;
+               display: block;
+               color: black; padding: 10px 20px; 
+               text-decoration: none;
+          }
+          .text1 {
+               border-right: 1px solid;
+               border-color: black;
+               margin-right: 5%;
+               text-align: center;
+               padding: 13px;
+               height: 10px;
+               align-items: center;
+              
+          }
+
+          .text2 {
+               border-bottom: 1px solid;
+               border-color: black;
+               margin-right: 50%;
+               text-align: center;
+               padding: 13px;
+               height: 18px;
+          }
+          .price{
+               display: flex;
+               border-top: 3px solid #000;
+               border-bottom: 3px solid #000;
+               border-radius: 100px;
+               border-color: black;
+               text-align: center;
+               margin-top: 30px;
+               padding: 3px;
+               height: 190px;
+               align-items: center;
+               flex-direction: column;
+
+          }
+          .map{
+               display: flex;
+               border-style: solid;
+               border-color: black;
+               text-align: center;
+               padding: 7px;
+               margin-bottom: 3px;
+               align-items: center;
+               flex-direction: column;
+
+          }
+          pre{
+               font-size: 15px;
+          }
+
+          footer {
+               background-color: black;
+               color: white;
+               height: 115px;
+               line-height: 30px;
+               text-align: center;
+               font-size: 15px;
+               line-height: calc(115px / 3);
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <div class="title"> 김태빈(Truer)의 공연 예매 페이지 만들기 </div>
+          <nav>
+               <a> 아티스트 소개 </a>
+               <a> 공연 일정 </a>
+               <a href="./1학기 텀 프로젝트 1.html"> 공연 예매 </a>
+               <a> 예매 확인 </a>
+               <div id="menu">
+                    <a> 지난 공연 일정 </a>
+                    <ul class ="dropdown">
+                    <li><a href="#"></a>2020년도</li>
+                    <li>2021년도</li>
+                    <li>2022년도</li>
+                    </ul>
+               </div>
+               
+          </nav>
+     </header>
+     <br>
+     <div id="container">
+          <h3 class ="text2">공연정보</h3>
+          <div class="flexBox">
+               <div class="leftSide">
+                    <img src="./공연포스터.png" alt="공연 포스터">
+               </div>
+               <div class="rightSide">
+                    <div class ="text1">공연 기간 : 2023.05.17 ~ 2023.05.18</div>
+                    <div class ="text1">공연 시간 : 100분 </div> 
+                    <div class ="text1">관람 연령 : 전체 관람가</div>
+               </div>
+          </div>
+          <div class = "text2">23년도 전주대학교 밴드부 쉼표 정기공연 포스터</div>
+         
+
+          <div class ="flexbox">
+               <ol class="price">
+                    <h3> 공연 가격표 
+                         <br>
+                         (가격은 개발자가 임의로 작성한 것 입니다) 
+                    </h3>
+                    <li> A 좌석 : 150,000</li>
+                    <li> B 좌석 : 130,000</li>
+                    <li> C 좌석 : 100,000</li>
+                    <li> D 좌석 : 80,000</li>
+                    <li> E 좌석 : 50,000</li>
+               </ol>
+          </div>
+          <div class ="flexbox">
+               <div class ="map">
+                    공연장 위치 :
+                    <pre>전라북도 전주시 완산구 천잠로 303 학생회관 지하 1층 b109호</pre>
+               </div>
+          </div>
+     </div>
+
+     <footer>
+          <div>개발자 : 컴퓨터공학과 김태빈 </div>
+          <div>연락처 : 010 - xxxx - xxxx </div>
+          <div>인스타그램 : @비공개 </div>
+     </footer>
+</body>
+
+</html>
